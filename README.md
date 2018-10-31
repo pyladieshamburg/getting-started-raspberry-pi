@@ -19,4 +19,4 @@ This will all be done with Python.
 
 ## Part 1 - Setting up your brand new Raspberry PI
 
-In this part we will just set things up.. follow the instruction on [raspberry-pi-setup](https://github.com/pyladieshamburg/getting-started-raspberry-pi/blob/master/raspberry-pi-setup.md)
+In this part we will just set things up.. follow the instruction on [raspberry-pi-setup](pisetup/raspberry-pi-setup.md)
