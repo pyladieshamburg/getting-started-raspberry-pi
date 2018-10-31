@@ -102,3 +102,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# password files
+pisetup/wpa_supplicant.conf
