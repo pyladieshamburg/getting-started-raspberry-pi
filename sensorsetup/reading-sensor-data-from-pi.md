@@ -74,3 +74,20 @@ This is how a board looks like from the bottom with the cover removed:
 ![Breadboard under the hood](https://cdn.sparkfun.com/r/600-600/assets/e/7/7/e/c/5175c500ce395f5a49000004.jpg)
 
 For more details, see [https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all).
+
+The *Adafruit_DHT* library provides us with a high level interface to get readings from the sensor.
+We will adapt their sample code to test if our circuit setup works alright.
+If you want, you can save the following code in a file `read_temperature_and_humidity.py` and run it with `python read_temperature_and_humidity.py`.
+
+```
+#!/usr/bin/python
+import sys
+import Adafruit_DHT
+
+sensor = 11
+pin = 4
+
+while True:
+    humidity, temperature = Adafruit_DHT.read_retry(sensor, pin)
+    print 'Temp: {0:0.1f} C  Humidity: {1:0.1f} %'.format(temperature, humidity)
+```
