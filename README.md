@@ -30,9 +30,9 @@ You'll also find a Python script that shows an example of how to get readings fr
 
 ## (Optional) Part 3 - Plotting your sensor readings with *matplotlib*
 
-Head over to [plotting-readings-from-pi](sensorsetup/plotting-readings-from-pi.md) if you want to plot the sensor data you collect as a time series graph with *matplotlib*. 
+Head over to [plotting-readings-from-pi](fun/matplotlib/plotting-readings-from-pi.md) if you want to plot the sensor data you collect as a time series graph with *matplotlib*. 
 
 ## (Optional) Part 4 - Serving readings from your Pi with *flask*
 
-In [serving-readings-from-pi](sensorsetup/serving-readings-from-pi.md) you find inspiration about how to use Python's web framework *flask* to deploy a super simple web app that runs locally on your Raspberry Pi and serves the current temperature and humidity.
+In [serving-readings-from-pi](fun/flask/serving-readings-from-pi.md) you find inspiration about how to use Python's web framework *flask* to deploy a super simple web app that runs locally on your Raspberry Pi and serves the current temperature and humidity.
   
