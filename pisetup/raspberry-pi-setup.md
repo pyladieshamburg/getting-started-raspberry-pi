@@ -77,10 +77,23 @@ arp -a | grep "b8:27:eb"
 ```
 This scans the local network and greps for IP addresses that are associated with a Raspberry Pi hardware address.
 
-Connect then via ssh.
+Connect then via ssh (exchange the IP 192.168.0.10 for the IP of your Raspberry Pi).
 
 ```bash
 ssh pi@192.168.0.10
 ```
 
 At this moment the password should be still the default one.
+
+Copying files from and to your Raspberry Pi with scp might also come in handy at some point.
+To copy a file named `file-on-my-machine` on your laptop to your Raspberry Pi's home directory, use the following:
+
+```bash
+scp file-on-my-machine pi@192.168.0.10:/home/pi
+```
+
+Or, the other way round, you can copy a file named `file-on-my-pi` from your Raspberry Pi's home directory to a directory on your laptop.
+
+```bash
+scp pi@192.168.0.10:/home/pi/file-on-my-pi dir-on-my-machine
+```
