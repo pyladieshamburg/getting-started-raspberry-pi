@@ -1,3 +1,5 @@
+# Reading sensor data
+
 Now that we've set up our Raspberry Pi, it should have a Linux operating system on it and nothing more.
 
 For collecting the data from DHT11 sensor we will follow the [Circuitbasics DHT11 tutorial](http://www.circuitbasics.com/how-to-set-up-the-dht11-humidity-sensor-on-the-raspberry-pi) and focus on the python part.
