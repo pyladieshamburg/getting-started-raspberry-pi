@@ -70,7 +70,14 @@ nmap -sn 192.168.0.5/24
 ```
 
 The last IP should be the one you are looking for. 
-Connect then via ssh
+
+Alternatively, you can try:
+```bash
+arp -a | grep "b8:27:eb"
+```
+This scans the local network and greps for IP addresses that are associated with a Raspberry Pi hardware address.
+
+Connect then via ssh.
 
 ```bash
 ssh pi@192.168.0.10
