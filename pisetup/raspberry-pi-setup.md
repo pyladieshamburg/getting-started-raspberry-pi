@@ -22,7 +22,16 @@ On the bottom of the same page, you find links to pages that describe how to fla
 
 If everything went as planned in the previous step, you should now be able to insert your SD card into its slot on the Raspberry Pi and boot the OS from there.
 If you have a monitor, HDMI cable, mouse and keyboard available, you can connect them with your Raspberry Pi *before* plugging in the charger.
-That way, you can configure the Wifi and ssh graphically after the OS has booted. 
+That way, you can configure wifi graphically after the OS has booted. 
+Select the wifi you want to connect to by clicking on the wifi symbol in the upper right corner.
+
+You may still want to configure ssh in order to be able to connect to the pi from your laptop.
+Once you're connected to the wifi, you can find out your Raspberry Pi's local IP by opening the terminal and running:
+```bash
+ifconfig | grep inet
+```
+Enable ssh in the menu that opens by clicking on the Raspberry Pi Menu Icon in the upper left corner → Preferences → Raspberry Pi Configuration.
+Now you're all set to ssh into your pi (see below for more information).
 
 If you don't have a monitor, HDMI cable, mouse and keyboard handy, go with the headless setup described below instead.
 
