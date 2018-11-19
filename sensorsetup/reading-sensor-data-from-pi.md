@@ -12,6 +12,7 @@ But first for some necessary setup on the software side.
 
 Python 3 and pip
 ```bash
+sudo apt-get update
 sudo apt-get install python3-dev python3-setuptools build-essential
 sudo apt-get install python3-pip
 ```
