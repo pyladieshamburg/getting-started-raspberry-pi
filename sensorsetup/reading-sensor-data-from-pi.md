@@ -26,7 +26,7 @@ Vim: unless you want to explore the ssh connection capabilities of your favored 
 ```bash
 sudo apt-get vim
 ```
-A recommended minimal configuration would be:
+A recommended minimal configuration to be put in a file named .vimrc in your Raspberry Pi's home directory would be:
 ```
 # change tabstop and shiftwidth to taste (e.g. you might prefer two instead of the given four spaces) 
 set nocompatible
@@ -36,7 +36,6 @@ set expandtab
 set number
 syntax on
 ```
-Put this in a file named .vimrc in your Raspberry Pi's home directory.
 
 AdaFruit: Python library to read the DHT series of humidity and temperature sensors
 ```bash
