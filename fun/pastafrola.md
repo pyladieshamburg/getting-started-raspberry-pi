@@ -2,6 +2,8 @@
 
 Pasta frola is a type of sweet tart common in Argentina. It is a quince-jam-filled shortcrust pastry most usually oven-baked in a circular shape. The covering of the tart is a thin-striped lattice which displays the filling beneath in square sections. 
 
+![Image of Pie](../images/pie.jpg)
+
 ## Ingredients 
 
 ### for the dough 
