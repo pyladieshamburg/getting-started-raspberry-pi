@@ -63,7 +63,7 @@ network={
 
 At this point, if all went well, it should be enough to insert the SD card into your Raspberry Pi. Plug in your Raspberry Pi connect via SSH.
 
-In order to connect via ssh you will have to find the IP of your Device. For this install *nmap* and run
+In order to connect via ssh you will have to find the IP of your Device. For this install *nmap* (available in your Linux or MacOS package manager or from http://nmap.org/download.html) and run
 
 ```bash
 nmap -sn 192.168.0.5/24
