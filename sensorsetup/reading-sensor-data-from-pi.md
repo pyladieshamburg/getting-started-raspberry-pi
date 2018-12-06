@@ -8,7 +8,7 @@ For collecting the data from DHT11 sensor we will follow the [Circuitbasics DHT1
 
 But first for some necessary setup on the software side.
 
-### Installing python and other libraries
+### Installing python and other libraries (unless they are already installed)
 
 Python 3 and pip in case they are missing
 ```bash
@@ -22,7 +22,7 @@ Git: we will need this for sure for when we get lots of code
 sudo apt-get install git-core
 ```
 
-Vim: unless you want to explore the ssh connection capabilities of your favored code editor.
+Vim or nano: unless you want to explore the ssh connection capabilities of your favored code editor.
 ```bash
 sudo apt-get vim
 ```
@@ -79,7 +79,7 @@ For more details, see [https://learn.sparkfun.com/tutorials/how-to-use-a-breadbo
 
 The *Adafruit_DHT* library provides us with a high level interface to get readings from the sensor.
 We will adapt their sample code to test if our circuit setup works alright.
-If you want, you can save the following code in a file `read_temperature_and_humidity.py` and run it with `python read_temperature_and_humidity.py`.
+If you want, you can save the following code in a file `read_temperature_and_humidity.py` and run it with `python3 read_temperature_and_humidity.py`.
 
 ```
 #!/usr/bin/python
@@ -91,5 +91,5 @@ pin = 4
 
 while True:
     humidity, temperature = Adafruit_DHT.read_retry(sensor, pin)
-    print 'Temp: {0:0.1f} C  Humidity: {1:0.1f} %'.format(temperature, humidity)
+    print ('Temp: {0:0.1f} C  Humidity: {1:0.1f}'.format(temperature, humidity))
 ```
