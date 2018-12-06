@@ -65,7 +65,7 @@ Pin 7 (GPIO4) will connect to the sensor's signal pin so that we can get reading
 
 The resulting circuit should look similar to this:
 
-![Circuit diagram](https://mounishkokkula.files.wordpress.com/2017/02/raspberry-pi-dht11-ssh-terminal-output1.png?w=1338&h=582) 
+![Circuit diagram](http://www.circuitbasics.com/wp-content/uploads/2015/12/How-to-Setup-the-DHT11-on-the-Raspberry-Pi-Three-pin-DHT11-Wiring-Diagram.png) 
 
 Note that we could have chosen any other 3.3/5V pin instead of pin 2, any other ground pin instead of pin 4, and any other general purpose pin instead of pin 7.
 
