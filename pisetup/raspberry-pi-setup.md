@@ -7,7 +7,7 @@ The first step of flashing an image of Raspian OS onto an SD card is the same fo
 
 Raspian is the officially recommended Linux distribution for general use of the Raspberry Pi.
 Get an image of Raspian OS from [Raspberry Pi Foundation](https://www.raspberrypi.org/downloads/raspbian/)
-(the light version is fine).
+(get Raspbian Stretch with desktop).
 
 You can choose between two options for flashing the Raspian image onto SD card.
 The safe option is to use Etcher, a graphical SD card writing tool that works on Mac OS, Linux and Windows.
