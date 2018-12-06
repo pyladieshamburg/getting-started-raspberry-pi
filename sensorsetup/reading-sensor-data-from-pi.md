@@ -10,7 +10,7 @@ But first for some necessary setup on the software side.
 
 ### Installing python and other libraries
 
-Python 3 and pip
+Python 3 and pip in case they are missing
 ```bash
 sudo apt-get update
 sudo apt-get install python3-dev python3-setuptools build-essential
@@ -39,7 +39,7 @@ syntax on
 
 AdaFruit: Python library to read the DHT series of humidity and temperature sensors
 ```bash
-sudo pip3 install Adafruit_DHT
+pip3 install Adafruit_DHT
 ```
 
 ## The Hardware part
