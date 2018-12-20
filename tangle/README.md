@@ -31,6 +31,7 @@ Save the file and run it. It will display an address that you can use as receive
 [Address(b'YMPXYZUKTLAOUR9AJVMHCI9RCZERCIREXXXD9QOUOUKIKQHWFCWRFZYYVPMPHFJA9GSQVFUVQ9HGRZYPW')]
 ```
 
+## Send data to the Tangle
 
 Create another file `send_data.py`. Replace the `SEED` with the same seed you chose for the previous file and the address as well.
 
@@ -53,8 +54,42 @@ api.send_transfer(depth=1, transfers=[tx])
 
 Save the file and execute it to send a message to the tangle.
 
+## Read data from the Tangle
+
+Create yet another file `read_data.py`. Again, replace the `Address` with the address you generated for yourself in the **Configuration** step.
+
+```python
+from datetime import datetime
+from iota import Address, Iota, Transaction, TryteString
+
+# 0. Where is data stored?
+receiver = Address(
+    b"YMPXYZUKTLAOUR9AJVMHCI9RCZERCIREXXXD9QOUOUKIKQHWFCWRFZYYVPMPHFJA9GSQVFUVQ9HGRZYPW"
+)
+
+# 1. Connect to public node
+api = Iota("https://durian.iotasalad.org:14265")
+
+# 2. Retrieve all transactions
+txs = api.find_transactions(addresses=[receiver])
+
+# 3. Iterate over transactions, decode and print
+for tx_hash in txs["hashes"]:
+    tx_hash_b = bytes(tx_hash)
+    tx_data_trytes = api.get_trytes([tx_hash_b])
+    tryte_str = str(tx_data_trytes["trytes"][0])
+
+    tx = Transaction.from_tryte_string(tryte_str)
+
+    timestamp = datetime.fromtimestamp(tx.timestamp)
+    tx_data = str(tx.signature_message_fragment.decode())
+    print("{ts}: {tx}".format(ts=timestamp, tx=tx_data))
+```
+
+Save the file and execute it to print all messages stored on your `Address`.
+
 ## And now?
 
 You can find your transaction and message on a tangle explorer, e.g. [https://thetangle.org](https://thetangle.org).
 
-Visit the page and paste in the string you choose for your `Address` to search for all transactions. Then you can click on the individual transaction and display details and the message you attached.
+Visit the page and paste in the string you chose for your `Address` to search for all transactions. Then you can click on the individual transaction and display details and the message you attached.
