@@ -109,6 +109,6 @@ venv.bak/
 pisetup/wpa_supplicant.conf
 
 
-#custom
+#customgit 
 .vscode/
 .vscode
