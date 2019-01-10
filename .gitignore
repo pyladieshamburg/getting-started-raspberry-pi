@@ -107,3 +107,8 @@ venv.bak/
 
 # password files
 pisetup/wpa_supplicant.conf
+
+
+#custom
+.vscode/
+.vscode
