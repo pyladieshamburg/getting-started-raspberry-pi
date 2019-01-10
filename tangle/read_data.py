@@ -1,9 +1,13 @@
 from datetime import datetime
 from iota import Address, Iota, Transaction, TryteString
 
+in_file = open("address.conf", "rb") # opening for [r]eading as [b]inary
+ADDRESS = in_file.read() # if you only wanted to read 512 bytes, do .read(512)
+in_file.close()
+
 # 0. Where is data stored?
 receiver = Address(
-    b"YMPXYZUKTLAOUR9AJVMHCI9RCZERCIREXXXD9QOUOUKIKQHWFCWRFZYYVPMPHFJA9GSQVFUVQ9HGRZYPW"
+    ADDRESS
 )
 
 # 1. Connect to public node

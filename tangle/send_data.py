@@ -1,13 +1,19 @@
 from datetime import datetime
 from iota import Address, Iota, ProposedTransaction, TryteString
 
-SEED = b"THIS9IS9MY9SEED"
+in_file = open("seed.conf", "rb") # opening for [r]eading as [b]inary
+SEED = in_file.read() # if you only wanted to read 512 bytes, do .read(512)
+in_file.close()
+
+in_file = open("address.conf", "rb") # opening for [r]eading as [b]inary
+ADDRESS = in_file.read() # if you only wanted to read 512 bytes, do .read(512)
+in_file.close()
 
 api = Iota("https://durian.iotasalad.org:14265", seed=SEED)
 
-message = TryteString.from_string("Hello PyData Hamburg! It's {}".format(str(datetime.now())))
+message = TryteString.from_string("Hello PyLadies Hamburg! It's {}".format(str(datetime.now())))
 
-receiver = Address(b"THEOUTPUTFROMTHEPREVIOUSSTEP")
+receiver = Address(ADDRESS)
 
 tx = ProposedTransaction(address=receiver, value=0, message=message)
 
