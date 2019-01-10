@@ -107,9 +107,11 @@ venv.bak/
 
 # secret files
 pisetup/wpa_supplicant.conf
-tangle/seed.conf
-tangle/address.conf
+tangle/config/*.conf
+data/*
+
 
 #custom
 .vscode/
 .vscodexcs
+.ipynb*

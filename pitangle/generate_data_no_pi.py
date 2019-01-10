@@ -6,7 +6,7 @@ import json
 from datetime import datetime
 from iota import Address, Iota, ProposedTransaction, TryteString
 
-in_file = open("tangle/address_0.conf", "rb") # opening for [r]eading as [b]inary
+in_file = open("tangle/address_dump.conf", "rb") # opening for [r]eading as [b]inary
 ADDRESS = in_file.read() # if you only wanted to read 512 bytes, do .read(512)
 in_file.close()
 

@@ -1,7 +1,7 @@
 from iota import Iota
 
 #read the file from the seed file (also change the value of the seed file locally)
-in_file = open("seed.conf", "rb") # opening for [r]eading as [b]inary
+in_file = open("tangle/seed_tan.conf", "rb") # opening for [r]eading as [b]inary
 seed = in_file.read() # if you only wanted to read 512 bytes, do .read(512)
 in_file.close()
 
