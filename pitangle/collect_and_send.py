@@ -2,6 +2,7 @@
 import Adafruit_DHT
 import time
 import json
+import sys
 from datetime import datetime
 from datetime import datetime
 from iota import Address, Iota, ProposedTransaction, TryteString
@@ -26,6 +27,7 @@ while True:
     humidity, temperature = Adafruit_DHT.read_retry(sensor, pin)
     timestamp = datetime.now()
     print('Temp: {0:0.1f} C   Humidity: {1:0.1f}   Measured at: {2:s}'.format(temperature, humidity, timestamp.strftime("%Y-%m-%d, %H:%M:%S")))
+    sys.stdout.flush()
     measurement = {"humidity": humidity, "temperature": temperature, "measuredAt": str(timestamp)}
     message = TryteString.from_string(json.dumps(measurement))
     tx = ProposedTransaction(address=receiver, value=0, message=message)
