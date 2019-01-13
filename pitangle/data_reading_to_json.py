@@ -28,6 +28,7 @@ for tx_hash in txs["hashes"]:
 
     timestamp = datetime.fromtimestamp(tx.timestamp)
     tx_data = json.loads(str(tx.signature_message_fragment.decode()))
+    print(tx_data)
     data.append(tx_data)
 
 with open('data.json', 'w') as outfile:
