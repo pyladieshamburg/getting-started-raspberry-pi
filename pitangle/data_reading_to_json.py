@@ -30,5 +30,5 @@ for tx_hash in txs["hashes"]:
     tx_data = json.loads(str(tx.signature_message_fragment.decode()))
     data.append(tx_data)
 
-with open('data/data.json', 'w') as outfile:  
+with open('data.json', 'w') as outfile:
     json.dump(data, outfile)
