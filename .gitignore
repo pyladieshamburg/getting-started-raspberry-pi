@@ -117,4 +117,5 @@ data/*
 .ipynb*
 
 # seed and address
-*_pi.conf
+address_pi.conf
+seed_tan.conf
