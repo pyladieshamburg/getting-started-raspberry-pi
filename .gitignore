@@ -115,3 +115,6 @@ data/*
 .vscode/
 .vscodexcs
 .ipynb*
+
+# seed and address
+*_pi.conf
