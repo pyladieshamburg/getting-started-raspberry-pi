@@ -8,10 +8,10 @@ from datetime import datetime
 from iota import Address, Iota, ProposedTransaction, TryteString
 
 #read the file from the seed file (also change the value of the seed file locally)
-seed_file = open("tangle/seed_tan.conf", "rb") # opening for [r]eading as [b]inary
+seed_file = open("tangle/config/seed_tan.conf", "rb") # opening for [r]eading as [b]inary
 seed = seed_file.read() # if you only wanted to read 512 bytes, do .read(512)
 seed_file.close()
-address_file = open("tangle/address_pi.conf", "rb") # opening for [r]eading as [b]inary
+address_file = open("tangle/config/address_pi.conf", "rb") # opening for [r]eading as [b]inary
 ADDRESS = address_file.read() # if you only wanted to read 512 bytes, do .read(512)
 address_file.close()
 
@@ -26,8 +26,8 @@ print("Restarting the process...")
 while True:
     humidity, temperature = Adafruit_DHT.read_retry(sensor, pin)
     timestamp = datetime.now()
-    print('Temp: {0:0.1f} C   Humidity: {1:0.1f}   Measured at: {2:s}'.format(temperature, humidity, timestamp.strftime("%Y-%m-%d, %H:%M:%S")))
-    sys.stdout.flush()
+    #print('Temp: {0:0.1f} C   Humidity: {1:0.1f}   Measured at: {2:s}'.format(temperature, humidity, timestamp.strftime("%Y-%m-%d, %H:%M:%S")))
+    #sys.stdout.flush()
     measurement = {"humidity": humidity, "temperature": temperature, "measuredAt": str(timestamp)}
     message = TryteString.from_string(json.dumps(measurement))
     tx = ProposedTransaction(address=receiver, value=0, message=message)
