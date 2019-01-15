@@ -1,13 +1,12 @@
 from datetime import datetime
 from iota import Address, Iota, ProposedTransaction, TryteString
 
-in_file = open("tangle/config/seed_tan.conf", "rb") # opening for [r]eading as [b]inary
-SEED = in_file.read() # if you only wanted to read 512 bytes, do .read(512)
-in_file.close()
+with open("tangle/config/seed_tan.conf") as in_file:
+    SEED = in_file.read().rstrip("\n").encode()
 
-in_file = open("tangle/config/address_tan.conf", "rb") # opening for [r]eading as [b]inary
-ADDRESS = in_file.read() # if you only wanted to read 512 bytes, do .read(512)
-in_file.close()
+
+with open("tangle/config/address_tan.conf") as in_file:
+    ADDRESS = in_file.read().rstrip("\n").encode()
 
 api = Iota("https://durian.iotasalad.org:14265", seed=SEED)
 

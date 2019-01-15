@@ -1,9 +1,11 @@
 from datetime import datetime
-from iota import Address, Iota, Transaction, TryteString
+from iota import Address, Iota, Transaction
 
-in_file = open("tangle/config/address_tan.conf", "rb") # opening for [r]eading as [b]inary
-ADDRESS = in_file.read() # if you only wanted to read 512 bytes, do .read(512)
-in_file.close()
+with open("tangle/config/address_tan.conf") as in_file:
+    # read as string
+    # strip any carriage return characters
+    # and encode as bytes()
+    ADDRESS = in_file.read().rstrip("\n").encode()
 
 # 0. Where is data stored?
 receiver = Address(

@@ -1,9 +1,11 @@
 from iota import Iota
 
-#read the file from the seed file (also change the value of the seed file locally)
-in_file = open("tangle/config/seed_tan.conf", "rb") # opening for [r]eading as [b]inary
-seed = in_file.read() # if you only wanted to read 512 bytes, do .read(512)
-in_file.close()
+# read the file from the seed file (also change the value of the seed file locally)
+with open("tangle/config/seed_tan.conf") as in_file:
+    # read as string
+    # strip any carriage return characters (Atom, I'm looking at you!)
+    # and then encode as bytes()
+    seed = in_file.read().rstrip("\n").encode()
 
 api = Iota('https://durian.iotasalad.org:14265', seed)
 
