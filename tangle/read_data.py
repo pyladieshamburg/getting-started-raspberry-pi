@@ -1,7 +1,7 @@
 from datetime import datetime
 from iota import Address, Iota, Transaction, TryteString
 
-in_file = open("tangle/config/address.conf", "rb") # opening for [r]eading as [b]inary
+in_file = open("tangle/config/address_tan.conf", "rb") # opening for [r]eading as [b]inary
 ADDRESS = in_file.read() # if you only wanted to read 512 bytes, do .read(512)
 in_file.close()
 
