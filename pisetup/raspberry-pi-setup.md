@@ -97,3 +97,42 @@ Or, the other way round, you can copy a file named `file-on-my-pi` from your Ras
 ```bash
 scp pi@192.168.0.10:/home/pi/file-on-my-pi dir-on-my-machine
 ```
+
+### Changing your Pi's hostname
+
+By default your Raspberry Pi's hostname is raspberrypi. 
+You can use that hostname and the suffix ".local" instead the Pi's local IP to ssh into it.
+
+Like so:
+
+```ssh pi@raspberrypi.local```
+
+That's handy because you don't have to take the trouble of figuring out your Pi's local IP.
+But it only works if your Raspberry Pi is the only one around in your local network. 
+As soon as there's more than one Pi with this hostname, you can't be sure which one you're connecting to with the above command.
+
+So, in order to take advantage of this convenient way of connecting to the Pi in a workshop setting, it's a good idea to change your Pi's hostname at home.
+
+Say I like Korean food and I want to change my Pi's hostname to *bibimbap123*. 
+One way to do this is to go and modify `/etc/hostname` and `/etc/hosts`, and change `raspberrypi` into `bibimbap123` in both files.
+You'll need to `sudo vim /etc/hostname` and `sudo vim /etc/hosts`, make the change and save to achieve this.
+
+Another option is to change the hostname via the Raspbian commandline config tool `raspi-config`. 
+It opens when you issue 
+
+```sudo raspi-config```
+
+on the commandline. A dialog box will open. Choose `2 Network Options` with the arrow keys and hit enter.
+Choose `N1 Hostname` and follow the instructions.
+
+In both cases, reboot to see the hostname change take effect. No you can use
+
+```ssh pi@bimbimbap123.local```
+
+to ssh into your Raspberry Pi.
+
+
+
+
+
+
