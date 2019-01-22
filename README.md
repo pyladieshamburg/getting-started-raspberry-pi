@@ -18,21 +18,29 @@ This will all be done with Python.
 * Connecting cables
 
 
-## Part 1 - Setting up your brand new Raspberry Pi
+## Setting up your brand new Raspberry Pi
 
 In this part we will just set things up. Follow the instructions in [raspberry-pi-setup](pisetup/raspberry-pi-setup.md).
 
-## Part 2 - Connecting a sensor to your Raspberry Pi
+## Connecting a sensor to your Raspberry Pi
 
 Using a breadboard and three cables, we'll connect the Raspberry Pi to a DHT11 temperature and humidity sensor.
 See [reading-sensor-data-from-pi](sensorsetup/reading-sensor-data-from-pi.md) for instructions on how to do the wiring. 
 You'll also find a Python script that shows an example of how to get readings from the sensor using the *Adafruit_DHT* library.
 
-## (Optional) Part 3 - Plotting your sensor readings with *matplotlib*
+## Plotting your sensor readings with *matplotlib*
 
 Head over to [plotting-readings-from-pi](fun/matplotlib/plotting-readings-from-pi.md) if you want to plot the sensor data you collect as a time series graph with *matplotlib*. 
 
-## (Optional) Part 4 - Serving readings from your Pi with *flask*
+## Serving readings from your Pi with *flask*
 
 In [serving-readings-from-pi](fun/flask/serving-readings-from-pi.md) you find inspiration about how to use Python's web framework *flask* to deploy a super simple web app that runs locally on your Raspberry Pi and serves the current temperature and humidity.
+  
+## Storing data from your Pi in IOTA
+
+IOTA is a distributed ledger that allows you to store data as part of zero-value transactions. 
+Store your first transaction by following the instructions in [tangle](tangle/README.md).
+
+Find more details about sending sensor data readings to the ledger in [pitangle](pitangle/README.md)
+ 
   
