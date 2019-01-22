@@ -41,6 +41,6 @@ In [serving-readings-from-pi](fun/flask/serving-readings-from-pi.md) you find in
 IOTA is a distributed ledger that allows you to store data as part of zero-value transactions. 
 Store your first transaction by following the instructions in [tangle](tangle/README.md).
 
-Find more details about sending sensor data readings to the ledger in [pitangle](pitangle/README.md)
+Find more details about sending sensor data readings to the ledger in [pitangle](pitangle/README.md).
  
   
