@@ -131,8 +131,16 @@ In both cases, reboot to see the hostname change take effect. No you can use
 
 to ssh into your Raspberry Pi.
 
+### Remote access to your Pi
 
+At some point, you might want to gain remote access to your Raspberry Pi.
+You may want to work with your pi (e.g. debug your long-running script) from anywhere, not just from home.
 
+Moving the whole device each time might not be the best option.
+If you had scripts collecting and streaming sensor data running, moving the Pi to another place would involve shutting it down and stop collecting sensor data.
 
-
-
+There are [two options](https://www.raspberrypi.org/documentation/remote-access/access-over-Internet/) if you want to ssh into your Raspberry Pi from outside your home network. 
+The first option is to us port forwarding in combination with a dynamic dns service. 
+The second option is to use a tunneling service such as [Remote IoT](https://remote-iot.com/) or [Remote IT](https://www.remot3.it/). 
+Both Remote IoT or Remote IT have free plans available. 
+You'll have to signup and then follow the instructions that will guide you through setting up the service on your Raspberry Pi.
