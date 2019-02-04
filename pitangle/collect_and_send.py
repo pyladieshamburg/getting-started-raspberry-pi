@@ -30,4 +30,5 @@ while True:
     message = TryteString.from_string(json.dumps(measurement))
     tx = ProposedTransaction(address=receiver, value=0, message=message)
     api.send_transfer(depth=1, transfers=[tx])
+    print('Sent.')
     time.sleep(300)
