@@ -26,7 +26,7 @@ time_to_sleep = 300
 while True:
     humidity, temperature = Adafruit_DHT.read_retry(sensor, pin)
     timestamp = datetime.now()
-    print('Took reading at {0:s}. Now sending. Temperature: {1:0.1f} C, humidity: {2:0.1f} %.'.format(timestamp.strftime("%Y-%m-%d, %H:%M:%S"), temperature, humidity, ))
+    print('Took reading at {0:s}. Now sending. Temperature: {1:0.1f} C, humidity: {2:0.1f}%.'.format(timestamp.strftime("%Y-%m-%d, %H:%M:%S"), temperature, humidity, ))
     sys.stdout.flush()
     measurement = {"humidity": humidity, "temperature": temperature, "measuredAt": str(timestamp)}
     message = TryteString.from_string(json.dumps(measurement))
