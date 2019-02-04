@@ -21,8 +21,6 @@ receiver = Address(ADDRESS)
 sensor = 11
 pin = 4
 
-print("Restarting the process...")
-
 while True:
     humidity, temperature = Adafruit_DHT.read_retry(sensor, pin)
     timestamp = datetime.now()
