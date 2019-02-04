@@ -3,7 +3,7 @@ import json
 
 from iota import Address, Iota, ProposedTransaction, TryteString
 
-with open("tangle/address_dump.conf") as in_file:
+with open("tangle/config/address_dump.conf") as in_file:
     ADDRESS = in_file.read().rstrip("\n").encode()
 
 api = Iota("https://durian.iotasalad.org:14265")
