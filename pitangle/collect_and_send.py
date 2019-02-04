@@ -21,14 +21,16 @@ receiver = Address(ADDRESS)
 sensor = 11
 pin = 4
 
+time_to_sleep = 300
+
 while True:
     humidity, temperature = Adafruit_DHT.read_retry(sensor, pin)
     timestamp = datetime.now()
-    print('Sending. Temperature: {0:0.1f} C Humidity: {1:0.1f} Timestamp: {2:s}'.format(temperature, humidity, timestamp.strftime("%Y-%m-%d, %H:%M:%S")))
+    print('Took reading. Now sending. Temperature: {0:0.1f} C Humidity: {1:0.1f} Timestamp: {2:s}'.format(temperature, humidity, timestamp.strftime("%Y-%m-%d, %H:%M:%S")))
     sys.stdout.flush()
     measurement = {"humidity": humidity, "temperature": temperature, "measuredAt": str(timestamp)}
     message = TryteString.from_string(json.dumps(measurement))
     tx = ProposedTransaction(address=receiver, value=0, message=message)
     api.send_transfer(depth=1, transfers=[tx])
-    print('Sent.')
-    time.sleep(300)
+    print('Sent. Next reading will be taken in {0} seconds'.format(time_to_sleep))
+    time.sleep(time_to_sleep)
