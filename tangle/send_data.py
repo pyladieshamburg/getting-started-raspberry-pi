@@ -1,7 +1,7 @@
 from datetime import datetime
 from iota import Address, Iota, ProposedTransaction, TryteString
 
-with open("tangle/config/seed_tan.conf") as in_file:
+with open("tangle/config/seed.conf") as in_file:
     SEED = in_file.read().rstrip("\n").encode()
 
 

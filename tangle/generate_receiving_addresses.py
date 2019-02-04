@@ -1,7 +1,7 @@
 from iota import Iota
 
 # read the file from the seed file (also change the value of the seed file locally)
-with open("tangle/config/seed_tan.conf") as in_file:
+with open("tangle/config/seed.conf") as in_file:
     # read as string
     # strip any carriage return characters (Atom, I'm looking at you!)
     # and then encode as bytes()

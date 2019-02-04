@@ -8,7 +8,7 @@ from datetime import datetime
 from iota import Address, Iota, ProposedTransaction, TryteString
 
 #read the file from the seed file (also change the value of the seed file locally)
-seed_file = open("tangle/config/seed_tan.conf", "rb") # opening for [r]eading as [b]inary
+seed_file = open("tangle/config/seed.conf", "rb") # opening for [r]eading as [b]inary
 seed = seed_file.read() # if you only wanted to read 512 bytes, do .read(512)
 seed_file.close()
 address_file = open("tangle/config/address_pi.conf", "rb") # opening for [r]eading as [b]inary
