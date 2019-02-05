@@ -8,6 +8,16 @@ Install pyota lib with:
 pip3 install pyota
 ```
 
+### Optional C Extension
+
+PyOTA has an optional C extension that improves the performance of its cryptography features significantly (speedups of 60x are common!).
+
+To install this extension, use the following command:
+
+```
+pip3 install pyota[ccurl]
+```
+
 ## Configuration
 
 Create a new file `generate_receiving_addresses.py` with the following content. Remember to replace the seed (the part that reads `b'THIS9IS9MY9SEED'`) with a seed of your choosing. Allowed characters are A-Z and 9.
