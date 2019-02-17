@@ -43,7 +43,7 @@ Store your first transaction by following the instructions in [tangle](tangle/RE
 
 Find more details about sending sensor data readings to the ledger in [pitangle](pitangle/README.md).
  
-## Making Predictions with Temperature Data
+## Making predictions with temperature data
 
 The sensor data we collected measures how temperature and humidity change over time. Many important applications rely on modeling time series data like ours, so that predictions and planning can be made for the future.
 
