@@ -21,7 +21,7 @@ Conclude by learning commons tools for time series analysis
  
 ## Making Predictions with Temperature Data
 
-This exercise starts with an overview of basic approaches for making univariate time series with predictions.
+The [prediction-times-series-data](https://github.com/pyladieshamburg/getting-started-raspberry-pi/blob/master/analysis/prediction-times-series-data.ipynb) exercise starts with an overview of basic approaches for making univariate time series with predictions.
 
 You will learn about the SARIMA Model and different ways to select SARIMA hyperparameters.
 
