@@ -1,7 +1,8 @@
 # Making Predictions with Temperature Data
 - [Setting up Python](#setting-up-python)
 - [Exploring Time Series Data](#exploring-time-series-data)
-- [Making Univariate Predictions with Temperature Data](#making-predictions-with-temperature-data)
+- [Univariate Predictions with Temperature Data](#making-predictions-with-temperature-data)
+- [Multivariate Predictions](#multivariate-predictions)
 
 
 ## Setting up Python
