@@ -13,7 +13,7 @@ To set up your Python environment, follow the instructions in repository: [getti
 
 ## Exploring Temperature and Humidity Data
 
-In this exercise, you create and visualize time series data.
+In the [data-exploration](https://github.com/pyladieshamburg/getting-started-raspberry-pi/blob/master/analysis/data-exploration.ipynb) exercise, you create and visualize time series data.
  
 You also examine some important characteristics of time series such as seasonality and trend 
     
