@@ -119,3 +119,12 @@ data/*
 # seed and address
 address_pi.conf
 seed_tan.conf
+
+# MAC stuff
+iot-htsensor-env/
+.ipynb_checkpoints/
+/data/temp_heat.csv
+/data/produkt_tu_stunde_19510101_20171231_00662.txt
+.idea
+.DS_Store
+__init__.py
