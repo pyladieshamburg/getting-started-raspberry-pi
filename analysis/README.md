@@ -27,6 +27,6 @@ Before you build use complex techniques for univariate time series prediction, t
 
 You will learn about the common univariate approaches and focus on building a SARIMA Model and different ways to select SARIMA hyperparameters.
 
-## Multivariate Predictions
+## Other Predictions
 
 The [prediction-season](https://github.com/pyladieshamburg/getting-started-raspberry-pi/blob/master/analysis/predict-season.ipynb) exercise - for fun - you use both temperature and humidy to predict the season of the year.
