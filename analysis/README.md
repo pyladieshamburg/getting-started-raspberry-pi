@@ -2,8 +2,9 @@
 - [Setting up Python](#setting-up-python)
 - [Exploring Time Series Data](#exploring-time-series-data)
 - [Making Univariate Predictions with Temperature Data](#making-univariate-predictions-with-temperature-data)
-- [Predictions with Neural Network](#predictions-with-neural-network)
-- 
+-- Predictions with SARIMA
+-- Predictions with Neural Network
+- [Making Multivariate Predictions](#making-multivariate-predictions])
 
 
 ## Setting up Python
@@ -28,6 +29,6 @@ Before you build use complex techniques for univariate time series prediction, t
 In the [predictions-with-neural-network](https://github.com/pyladieshamburg/getting-started-raspberry-pi/blob/master/analysis/predict-with-nn.ipynb) exercise, you will set up a basic neural network and experiment with options for training the best model.
 
 
-## Other Predictions
+## Making Multivariate Predictions
 
 The [prediction-season](https://github.com/pyladieshamburg/getting-started-raspberry-pi/blob/master/analysis/predict-season.ipynb) exercise - for fun - you use both temperature and humidy to predict the season of the year.
