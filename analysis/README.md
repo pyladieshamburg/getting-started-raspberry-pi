@@ -23,9 +23,7 @@ You also examine some important characteristics of time series such as seasonali
 
 The [predictions-with-sarima](https://github.com/pyladieshamburg/getting-started-raspberry-pi/blob/master/analysis/prediction-times-series-data.ipynb) exercise starts with an overview of basic approaches for making univariate time series with predictions.
 
-Before you build use complex techniques for univariate time series prediction, traditional approaches should also be implemented as a baseline.
-
-You will learn about the common univariate approaches and focus on building a SARIMA Model and different ways to select SARIMA hyperparameters.
+Before you build use complex techniques for univariate time series prediction, traditional approaches should also be implemented as a baseline. You will learn about the common univariate approaches and focus on building a SARIMA Model and different ways to select SARIMA hyperparameters.
 
 [predictions-with-neural-network] ()
 
