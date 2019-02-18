@@ -120,7 +120,7 @@ data/*
 address_pi.conf
 seed_tan.conf
 
-# MAC stuff
+# MAC data 
 iot-htsensor-env/
 .ipynb_checkpoints/
 /data/temp_heat.csv
