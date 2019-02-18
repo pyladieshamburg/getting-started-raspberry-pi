@@ -3,7 +3,8 @@
 - [Exploring Time Series Data](#exploring-time-series-data)
 - [Making Univariate Predictions with Temperature Data](#making-univariate-predictions-with-temperature-data)
   + Predictions with SARIMA
-  + Predictions with Neural Network
+  + Predictions with Basic Neural Network
+  + Predictions with LSTM
 - [Making Multivariate Predictions](#making-multivariate-predictions])
 
 
@@ -26,8 +27,9 @@ In these exercises you will experiment with different approaches to making univa
 
 Before you build use complex techniques for univariate time series prediction, traditional approaches should also be implemented as a baseline. The [predictions-with-sarima](https://github.com/pyladieshamburg/getting-started-raspberry-pi/blob/master/analysis/prediction-with-sarima.ipynb) you  focus on building a SARIMA Model and different ways to select SARIMA hyperparameters.
 
-In the [predictions-with-neural-network](https://github.com/pyladieshamburg/getting-started-raspberry-pi/blob/master/analysis/predict-with-nn.ipynb) exercise, you will set up a basic neural network and experiment with options for training the best model.
+In the [predictions-with-neural-network](https://github.com/pyladieshamburg/getting-started-raspberry-pi/blob/master/analysis/predict-with-nn.ipynb) exercise, you will set up a basic LSTM and experiment with options for training the best model.
 
+In the [predictions-with-lstm](https://github.com/pyladieshamburg/getting-started-raspberry-pi/blob/master/analysis/predict-with-lstm.ipynb) exercise, you will set up a basic neural network and experiment with options for training the best model.
 
 ## Making Multivariate Predictions
 
