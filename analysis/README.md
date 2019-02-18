@@ -25,7 +25,7 @@ In these exercises you will experiment with different approaches to making univa
 
 Before you build use complex techniques for univariate time series prediction, traditional approaches should also be implemented as a baseline. The [predictions-with-sarima](https://github.com/pyladieshamburg/getting-started-raspberry-pi/blob/master/analysis/prediction-with-sarima.ipynb) you  focus on building a SARIMA Model and different ways to select SARIMA hyperparameters.
 
-In the [predictions-with-neural-network] () exercise, you will set up a basic neural network and experiment with options for training the best model.
+In the [predictions-with-neural-network](https://github.com/pyladieshamburg/getting-started-raspberry-pi/blob/master/analysis/predict-with-nn.ipynb) exercise, you will set up a basic neural network and experiment with options for training the best model.
 
 
 ## Other Predictions
