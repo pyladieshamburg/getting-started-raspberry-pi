@@ -2,8 +2,8 @@
 - [Setting up Python](#setting-up-python)
 - [Exploring Time Series Data](#exploring-time-series-data)
 - [Making Univariate Predictions with Temperature Data](#making-univariate-predictions-with-temperature-data)
-  + [Predictions with SARIMA](https://github.com/pyladieshamburg/getting-started-raspberry-pi/blob/master/analysis/prediction-with-sarima.ipynb)
-  + [Predictions with Neural Network](https://github.com/pyladieshamburg/getting-started-raspberry-pi/blob/master/analysis/predict-with-nn.ipynb)
+  + Predictions with SARIMA
+  + Predictions with Neural Network
 - [Making Multivariate Predictions](#making-multivariate-predictions])
 
 
