@@ -66,10 +66,15 @@ Now we need to install the required packages to use the code.
 
 We must tell Jupyter notebook how to find your python kernel:
 
+
+```console
 (env) getting-started-raspberry-pi$  pip install tornado
 (env) getting-started-raspberry-pi$  pip install ipykernel
-# Create the kernel (from within the virtual environment that we created)
+# Create the kernel (from within the virtual environment that we created above)
 (env)$ python -m ipykernel install --user --name env --display-name "PyLadies-Time-Series"
+```
+
+Download data:
 
 
 Let's start looking at the code. Start your Jupyter notebook:
