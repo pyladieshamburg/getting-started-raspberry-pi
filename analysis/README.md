@@ -10,7 +10,7 @@
 
 ## Setting up Python
 
-To set up your Python environment, follow the instructions in repository: [getting-started-with-python](https://github.com/pyladieshamburg/getting-started-with-python/blob/master/README.md)
+To get started you will need to have git installed on your computer. To set git, follow the  instructions in repository: [getting-started-with-python](https://github.com/pyladieshamburg/getting-started-with-python/blob/master/README.md)
 
 
 ```console
