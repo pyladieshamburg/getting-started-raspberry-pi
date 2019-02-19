@@ -14,8 +14,16 @@ To get started, you will need to have Python, pip and  Jupyter Notebook installe
 
 To set up your Python environment, follow the instructions in repository: [getting-started-with-python](https://github.com/pyladieshamburg/getting-started-with-python/blob/master/README.md)
 
+Change directory to a location where you want to place your code. We will use a directory named 'repo'
+
 ```console
-foo@bar:~$ git clone https://github.com/pyladieshamburg/getting-started-raspberry-pi.git
+~$ cd repo
+```
+
+Inside the code directory, clone the repository for this workshop
+
+```console
+repo:~$ git clone https://github.com/pyladieshamburg/getting-started-raspberry-pi.git
 ```
 
 
