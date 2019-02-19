@@ -7,6 +7,13 @@ htsensor_columns = ['timestamp', 'Start Symbol', 'Zustand', 'Zeitstempel', 'Temp
                     ]
 
 
+dtype = {'name': str,'review': str,
+                                                      'rating': int,'word_count': dict}
+'timestamp':str, 'Start Symbol':str, 'Zustand':str, 'Zeitstempel':str, 'Temp1':dou, 'Temp2', 'Temp3', 'Temp4', 'Temp5',
+                    'Temp6', 'Temp7', 'Temp8', 'Humi1', 'Humi2', 'Humi3', 'Humi4', 'Humi5', 'Humi6', 'Humi7', 'Humi8',
+                    'Temperatur Kombisensor', 'Humid Kombisensor', 'Windgeschwindigkeit', 'Niederschlag', 'Rain',
+                    'Stop Symbol'
+
 def braunschweig(url):
 
     # read data from file: parse the date after reading, just as a sanity check
