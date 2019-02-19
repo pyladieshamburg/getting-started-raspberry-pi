@@ -10,11 +10,9 @@
 
 ## Setting up Python
 
-To get started, you will need to have Python, pip and  Jupyter Notebook installed.
-
 To set up your Python environment, follow the instructions in repository: [getting-started-with-python](https://github.com/pyladieshamburg/getting-started-with-python/blob/master/README.md)
 
-Change directory to a location where you want to place your code. We will use the  name this  'repo' as an example.
+Change to a local directory, where you want to place your code. We will use the name 'repo' as an example.
 
 ```console
 ~$ cd repo
