@@ -74,12 +74,14 @@ We must tell Jupyter notebook how to find your python kernel:
 (env)$ python -m ipykernel install --user --name env --display-name "PyLadies-Time-Series"
 ```
 
-Download data:
+Download data we will use for the workshop:
 
-https://secure.sonnenstein.org/nextcloud/index.php/apps/files/?dir=/iot/htsensor/data/PyladiesHH_Feb19_2019&fileid=13746
+https://secure.sonnenstein.org/nextcloud/index.php/s/GPB4fg4xcFMcv58
+
+https://secure.sonnenstein.org/nextcloud/index.php/s/Zmp4GnRh7N8S3ov
 
 
-Let's start looking at the code. Start your Jupyter notebook:
+Let's look at some code. Start your Jupyter notebook:
 
 ```console
 (env) getting-started-raspberry-pi$  jupyter-lab
