@@ -19,14 +19,14 @@ Change to your local user directory.
 Let's put our code in a local user directory named 'repo'. Create the directory by using the following commands:
 
 ```console
-$ cd ~
-~$ mkdir repo
+$ cd
+mkdir repo
 ```
 
 Change to the 'repo' directory that you just created. This is where you will place your code. 
 
 ```console
-~$ cd repo
+cd repo
 ```
 
 Inside the code directory, clone the repository for this workshop:
