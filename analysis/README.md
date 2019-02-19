@@ -10,41 +10,41 @@
 
 ## Setting up Python
 
-To get started you will need to have git installed on your computer. To setup git, follow the  instructions in repository: [getting-started-with-python](https://github.com/pyladieshamburg/getting-started-with-python/blob/master/README.md)
+To get started you will need  git installed on your computer. 
 
+https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
+Change to your local user directory.
+
+Let's put our code in a local user directory named 'repo'. Create the directory by using the following commands:
 
 ```console
 $ cd ~
-```
-
-Let's put our code in a directory named 'repo'. Create the directory by using the following command:
-
-```console
 ~$ mkdir repo
 ```
 
-Change to a local directory, where you want to place your code. We will use the name 'repo' as an name of the local directory in this example.
+Change to the 'repo' directory that you just created. This is where you will place your code. 
 
 ```console
 ~$ cd repo
 ```
 
-Inside the code directory, clone the repository for this workshop
+Inside the code directory, clone the repository for this workshop:
 
 ```console
-repo $ git clone https://github.com/pyladieshamburg/getting-started-raspberry-pi.git
+repo$ git clone https://github.com/pyladieshamburg/getting-started-raspberry-pi.git
 ```
 
-Change directory to the cloned repository:
+Change directory, so that you are inside the cloned repository:
 
 ```console
-repo $ cd getting-started-raspberry-pi 
+repo$ cd getting-started-raspberry-pi 
 ```
 
 Create a python virtual environment:
 
 ```console
-getting-started-raspberry-pi  $ python3 -m venv env
+getting-started-raspberry-pi$ python3 -m venv env
 ```
 
 Activate the newly created virtual environment
