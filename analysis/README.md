@@ -76,6 +76,8 @@ We must tell Jupyter notebook how to find your python kernel:
 
 Download data:
 
+https://secure.sonnenstein.org/nextcloud/index.php/apps/files/?dir=/iot/htsensor/data/PyladiesHH_Feb19_2019&fileid=13746
+
 
 Let's start looking at the code. Start your Jupyter notebook:
 
