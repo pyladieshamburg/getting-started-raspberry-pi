@@ -64,6 +64,11 @@ Now we need to install the required packages to use the code.
 (env) getting-started-raspberry-pi$  pip install -r requirements.txt
 ```
 
+Let's start looking at the code. Start your Jupyter notebook:
+
+```console
+(env) getting-started-raspberry-pi$  jupyter-lab
+```
 
 ## Exploring Temperature and Humidity Data
 
