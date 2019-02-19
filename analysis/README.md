@@ -23,7 +23,7 @@ Change directory to a location where you want to place your code. We will use th
 Inside the code directory, clone the repository for this workshop
 
 ```console
-repo:~$ git clone https://github.com/pyladieshamburg/getting-started-raspberry-pi.git
+repo $ git clone https://github.com/pyladieshamburg/getting-started-raspberry-pi.git
 ```
 
 
