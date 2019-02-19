@@ -16,7 +16,7 @@ https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 
 Change to your local user directory.
 
-Let's put our code in a local user directory named 'repo'. Create the directory by using the following commands:
+Let's put our code in a local user directory named 'repo' (You don't have to use the name repo, or any name you like) . Create the directory by using the following commands:
 
 ```console
 $ cd
@@ -41,7 +41,7 @@ Change directory, so that you are inside the cloned repository:
 repo$ cd getting-started-raspberry-pi 
 ```
 
-Create a python virtual environment:
+Create a python virtual environment. The name of the virtual environment is 'env'. You may name the environment whatever you like.
 
 ```console
 getting-started-raspberry-pi$ python3 -m venv env
@@ -50,14 +50,13 @@ getting-started-raspberry-pi$ python3 -m venv env
 Activate the newly created virtual environment
 
 ```console
-getting-started-raspberry-pi  $ source env/bin/activate
+getting-started-raspberry-pi$ source env/bin/activate
 ```
 
-You have succussfully activated your enviroment when the name of your environment is prefixed at the command line:
+You have successfully activated your environment when the name of your environment is prefixed at the command line:
 
-```console
-(env) getting-started-raspberry-pi  $ source env/bin/activate
-```
+(env) getting-started-raspberry-pi$ 
+
 
 
 ## Exploring Temperature and Humidity Data
