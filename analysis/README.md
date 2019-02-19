@@ -26,6 +26,30 @@ Inside the code directory, clone the repository for this workshop
 repo $ git clone https://github.com/pyladieshamburg/getting-started-raspberry-pi.git
 ```
 
+Change directory to the cloned repository:
+
+```console
+repo $ cd getting-started-raspberry-pi 
+```
+
+Create a python virtual environment:
+
+```console
+getting-started-raspberry-pi  $ python3 -m venv env
+```
+
+Activate the newly created virtual environment
+
+```console
+getting-started-raspberry-pi  $ source env/bin/activate
+```
+
+You have succussfully activated your enviroment when the name of your environment is prefixed at the command line:
+
+```console
+(env) getting-started-raspberry-pi  $ source env/bin/activate
+```
+
 
 ## Exploring Temperature and Humidity Data
 
