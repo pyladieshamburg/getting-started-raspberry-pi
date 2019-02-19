@@ -60,7 +60,7 @@ You have successfully activated your environment when the name of your environme
 Now we need to install the required packages to use the code.
 
 
-```consolesource env/bin/acti
+```console
 (env) getting-started-raspberry-pi$  pip install -r requirements.txt
 ```
 
