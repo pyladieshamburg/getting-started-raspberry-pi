@@ -14,6 +14,10 @@ To get started, you will need to have Python, pip and  Jupyter Notebook installe
 
 To set up your Python environment, follow the instructions in repository: [getting-started-with-python](https://github.com/pyladieshamburg/getting-started-with-python/blob/master/README.md)
 
+```console
+foo@bar:~$ git clone https://github.com/pyladieshamburg/getting-started-raspberry-pi.git
+```
+
 
 ## Exploring Temperature and Humidity Data
 
