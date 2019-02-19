@@ -65,8 +65,6 @@ Now we need to install the required packages to use the code.
 ```
 
 
-pip install -r requirements.txt
-
 ## Exploring Temperature and Humidity Data
 
 In the [data-exploration](https://github.com/pyladieshamburg/getting-started-raspberry-pi/blob/master/analysis/data-exploration.ipynb) exercise, you create and visualize time series data.
