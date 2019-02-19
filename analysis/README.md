@@ -12,6 +12,12 @@
 
 To set up your Python environment, follow the instructions in repository: [getting-started-with-python](https://github.com/pyladieshamburg/getting-started-with-python/blob/master/README.md)
 
+Let's put our code in a directory named 'repo'. Create the directory by using the following command:
+
+```console
+~$ mkdir repo
+```
+
 Change to a local directory, where you want to place your code. We will use the name 'repo' as an name of the local directory in this example.
 
 ```console
