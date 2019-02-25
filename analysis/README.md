@@ -89,9 +89,11 @@ You also examine some important characteristics of time series such as seasonali
  
 ## Making Univariate Predictions with Temperature Data
 
-In these exercises you will experiment with different approaches to making univariate time series with predictions.
+In these exercises you will experiment with different approaches to making univariate time series with predictions. It is good practice to begin by building simple models as a starting point, before advancing to more complex techniques. 
 
-Before you build use complex techniques for univariate time series prediction, traditional approaches should also be implemented as a baseline. The [predictions-with-sarima](https://github.com/pyladieshamburg/getting-started-raspberry-pi/blob/master/analysis/prediction-with-sarima.ipynb) you  focus on building a SARIMA Model and different ways to select SARIMA hyperparameters.
+Based on the findings in a recent study of univariate predictions (https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0194889&type=printable), let's start with a very traditional approach from statistics. 
+
+The [predictions-with-sarima](https://github.com/pyladieshamburg/getting-started-raspberry-pi/blob/master/analysis/prediction-with-sarima.ipynb) you  focus on building a SARIMA Model and different ways to select SARIMA hyperparameters.
 
 In the [predictions-with-neural-network](https://github.com/pyladieshamburg/getting-started-raspberry-pi/blob/master/analysis/predict-with-nn.ipynb) exercise, you will set up a basic LSTM and experiment with options for training the best model.
 
